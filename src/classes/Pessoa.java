@@ -19,11 +19,4 @@ public class Pessoa {
         return dataNascimento;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setDataNascimento(LocalDate dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
 }
