@@ -38,16 +38,16 @@ public class Principal {
         /* Item 3.3 – Imprimir todos os funcionários com todas suas informações, sendo que:
         • informação de data deve ser exibido no formato dd/mm/aaaa;
         • informação de valor numérico deve ser exibida no formatado com separador de milhar como ponto e decimal como vírgula.*/
-        //.forEach(System.out::println);
+        funcionarios.forEach(System.out::println);
 
         /* Item 3.4 – Os funcionários receberam 10% de aumento de salário, atualizar a lista de funcionários com novo valor. */
         funcionarioService.aplicarAumento(funcionarios, 10.0);
 
         /* Item 3.5 – Agrupar os funcionários por função em um MAP, sendo a chave a “função” e o valor a “lista de funcionários”. */
-        //Map<String, List<Funcionario>> funcionariosPorFuncao = funcionarioService.agruparPorFuncao(funcionarios);
+        Map<String, List<Funcionario>> funcionariosPorFuncao = funcionarioService.agruparPorFuncao(funcionarios);
 
         /* Item 3.6 – Imprimir os funcionários, agrupados por função.*/
-        //funcionarioService.imprimirFuncionariosPorFuncao(funcionariosPorFuncao);
+        funcionarioService.imprimirFuncionariosPorFuncao(funcionariosPorFuncao);
 
         /* Item 3.8 – Imprimir os funcionários que fazem aniversário no mês 10 e 12.*/
         funcionarioService.imprimirAniversariantesOutubroDezembro(funcionarios);
@@ -59,7 +59,7 @@ public class Principal {
 
         /* Item 3.10 – Imprimir a lista de funcionários por ordem alfabética. */
         funcionarioService.listarEmOrdemAlfabetica(funcionarios).forEach(System.out::println);
-        System .out.println("\n");
+        System.out.println("\n");
 
 
         /* Item 3.11 – Imprimir o total dos salários dos funcionários. */
